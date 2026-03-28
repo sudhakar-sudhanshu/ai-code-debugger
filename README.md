@@ -72,7 +72,9 @@ node server.js
 
 Open frontend/index.html in browser
 
-<img width="1920" height="1080" alt="Screenshot (116)" src="https://github.com/user-attachments/assets/fd1f91aa-740a-4414-9619-7f58fb99bccc" />
+## 📸 Demo
+
+![Demo](images/demo.png)
 
 
 
