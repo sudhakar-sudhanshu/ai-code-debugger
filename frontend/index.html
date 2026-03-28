@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Code Debugger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>AI Code Debugger</h1>
+
+  <!-- Code Input -->
+  <textarea id="code" placeholder="Paste your code here..."></textarea>
+
+  <!-- Code File Upload -->
+  <label>Upload Code File:</label>
+  <input type="file" id="fileInput" />
+
+  <!-- Document Upload (RAG) -->
+  <label>Upload General Document:</label>
+  <input type="file" id="docUpload" />
+
+  <!-- Controls -->
+  <div class="controls">
+    
+    <select id="action">
+      <option value="Explain the code">Explain</option>
+      <option value="Debug and fix errors">Debug</option>
+      <option value="Optimize performance">Optimize</option>
+    </select>
+
+    <select id="language">
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+      <option value="Java">Java</option>
+      <option value="C++">C++</option>
+    </select>
+
+    <button onclick="runAI()">Run AI</button>
+    <button onclick="clearHistory()">Clear Chat</button>
+
+  </div>
+
+  <!-- Output Box -->
+  <div class="section">
+    <h3>Output</h3>
+    <div class="card">
+      <div id="output" class="box-content">
+        <span style="color:gray;">Your AI response will appear here...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- History Box -->
+  <div class="section">
+    <h3>Chat History</h3>
+    <div class="card small">
+      <div id="history" class="box-content">
+        <span style="color:gray;">Chat history will appear here...</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
